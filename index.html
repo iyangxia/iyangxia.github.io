@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YANGXIA</title>
+  <link rel="stylesheet" href="http://assets.pretty-girl.top/yangxia/reset.css"/>
+  <link rel=icon href=favicon.ico>
+  <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <style>
+    html {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("http://assets.pretty-girl.top/yangxia/bg.png");
+      font-size: 14px;
+    }
+    html,body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    @keyframes spin {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    p {
+      writing-mode: vertical-rl;
+      text-align: center;
+      max-width: 990px;
+      margin: 0 auto;
+      padding: 10px;
+      height: 100%;
+      color: antiquewhite;
+      font-family: "Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+      animation: spin 4s ease-in-out;
+      font-size: 1.4rem;
+    }
+    @media only screen and (max-width:480px) {
+      p {
+        font-size: 1rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <p style="font-family: cursive;">
+       當妳老了<br/>
+       當年華已逝 妳兩鬢斑白 沉沉欲睡<br/>
+    　　坐在爐邊慢慢打盹 請取下我的這本詩集<br/>
+    　　請緩緩讀起 如夢壹般 妳會重溫<br/>
+    　　妳那脉脉眼波 她們是曾經那麽的深情和柔美 <br/>
+    　　
+    　　多少人曾愛過妳容光煥發的楚楚魅力<br/>
+    　　愛妳的傾城容顏 或是真心 或是做戲<br/>
+    　　但只有壹個人 他愛的是妳聖潔虔誠的心<br/>
+    　　當妳洗盡鉛華 傷逝紅顏的老去 他也依然深愛著妳<br/>
+    　　
+    　　爐裏的火焰溫暖明亮 妳輕輕低下頭去<br/>
+    　　帶著淡淡的淒然 為了枯萎熄滅的愛情 喃喃低語<br/>
+    　　此時他正在千山萬壑之間獨自遊蕩<br/>
+    　　在那滿天凝視妳的繁星後面隱起了臉龐
+
+    　　
+  </p>
+
+  <script src="http://assets.pretty-girl.top/yangxia/script/soundmanager2-nodebug-jsmin.js"></script>
+  <script>
+    soundManager.setup({
+      url: 'http://assets.pretty-girl.top/yangxia/swf',
+      onready: function() {
+        var mySound = soundManager.createSound({
+          id: 'aSound',
+          url: 'http://assets.pretty-girl.top/yangxia/bg.mp3'
+        });
+        mySound.play();
+      }
+    });
+  </script>
+</body>
+</html>
